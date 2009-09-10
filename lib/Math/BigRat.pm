@@ -23,7 +23,7 @@ use vars qw($VERSION @ISA $upgrade $downgrade
 
 @ISA = qw(Math::BigFloat);
 
-$VERSION = '0.23';
+$VERSION = '0.24';
 $VERSION = eval $VERSION;
 
 use overload;			# inherit overload from Math::BigFloat
@@ -1687,7 +1687,7 @@ use L<as_int()> or L<as_float()> instead.
 This routine is automatically used whenever a scalar is required:
 
 	my $x = Math::BigRat->new('3/1');
-	@array = (1,2,3);
+	@array = (0,1,2,3);
 	$y = $array[$x];		# set $y to 3
 
 =head2 as_int()/as_number()
